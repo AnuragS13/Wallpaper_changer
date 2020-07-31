@@ -23,7 +23,7 @@ def start_operating():
             nam=dic["current_mode"].replace(" ","_")
             lst=os.listdir(parent_folder+"{}".format(nam))
             try:
-                fl=open(parent_folder+name+"/last.txt","r")
+                fl=open(parent_folder+nam+"/last.txt","r")
                 lt=fl.read().strip() 
                 lst.remove("last.txt")
                 fl.close()
@@ -67,7 +67,7 @@ def start_operating():
                 nam=dic["current_mode"].replace(" ","_")
                 lst=os.listdir(parent_folder+"{}".format(nam))
                 try:
-                    fl=open(parent_folder+name+"/last.txt","r")
+                    fl=open(parent_folder+nam+"/last.txt","r")
                     lt=fl.read().strip() 
                     lst.remove("last.txt")
                     fl.close()
